@@ -1,0 +1,140 @@
+header{
+    width:100%;
+    display: flex;
+    min-height:120px;
+    padding-top:10px;
+    
+  }
+  
+  header .headerLeft
+  {
+  
+  }
+  header .headerLeft img
+  {
+    width:50%;
+    margin-left:50px;
+    margin-top:40px;
+  }
+  
+  header .headerRight{
+  min-width:60%;
+  display: flex;
+  justify-content: space-between;
+  padding-right:50px;}
+  header  .openMenu
+  {
+    visibility: hidden;
+  }
+  
+  header .headerRight a{
+  display: block;
+  padding:40px;
+  color:#dfdfdf;
+  text-decoration: none;
+  transition: 0.5s;
+  font-weight: 700;
+  font-size:18px;
+  
+  }
+  header .headerRight a:hover{
+  color:#fff;
+  transform:translateX(10px)
+  }
+  
+  
+  
+  .headerBorder
+  {
+    border-top:#525252 solid 1px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+
+  @media (max-width:750px)
+  {
+
+    header  .openMenu
+    {
+        visibility: visible;
+        position: fixed;
+        top:100px;
+        right:0px;
+        z-index: 1000000;
+        border:#aef63f 2px solid;
+        padding:10px;
+        border-radius: 10px;
+        transition: 0.3s;
+
+
+    }
+    .changeMenuPos
+    {
+        top:20px !important;
+        right:50px !important;
+    }
+    header  .openMenu:hover
+    {
+        cursor:pointer;
+
+    }
+    header  .openMenu svg
+    {
+        color:#aef63f;
+    }
+header{
+    flex-flow: column;
+}
+header .headerLeft
+{
+    width:100%;
+    padding:10px;
+}
+header .headerLeft img{
+    width:90%;
+    padding:0;
+    margin-right: auto;
+    margin-left:auto
+}
+
+header .headerRight
+{
+    visibility: hidden;
+    position:fixed;
+flex-flow: column;
+background-color: rgba(0,0,0,0.8);
+width:100%;
+height:100%;
+padding:0;
+padding-top:50px;
+overflow-y: auto;
+justify-content:flex-start;
+left:-100%;
+transition:0.5s;
+min-height: 1.5vh;
+z-index:100000;
+}
+header .headerRight a
+{
+width:100%;
+border-bottom:#aef63f 1px solid;
+line-height:80px;
+}
+
+header .headerRight a:last-child
+{
+    margin-bottom:250px;
+}
+header .openPhoneMenu
+
+{
+    visibility: visible;
+    left:0;
+}
+
+
+
+  }

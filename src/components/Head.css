@@ -1,0 +1,54 @@
+.head
+{
+    display: flex;
+    color:#dddddd;
+}
+.head .headLeft
+{
+width:40%;
+padding:50px;
+padding-left:100px;
+padding-top:100px;
+text-align: left;
+
+}
+.head .headLeft h1
+{
+    font-size:40px;
+}
+
+.head .headRight
+{
+width:60%;
+background-image: url('../images/laptop.jpg');
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+margin-top:100px
+}
+
+@media(max-width:750px)
+{
+    .head
+    {
+flex-flow: column;
+    }
+    .head .headLeft
+    {
+width:90%;
+padding:5%;
+
+    }
+
+    .head .headLeft h1
+{
+font-size:30px;
+}
+
+.head .headRight
+{
+    width: 100%;
+    padding:0;
+    min-height: 200px;;
+}
+}

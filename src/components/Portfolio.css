@@ -1,0 +1,89 @@
+.Portfolio
+{
+    width:100%;
+    min-height: 200px;
+    background-color: #aef63f;
+    margin-bottom: 50px;;
+}
+
+.Portfolio h3
+{
+    font-size:30px;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+.Portfolio .portElements
+{
+    display: flex; 
+justify-content: space-around;}
+
+.Portfolio .portElements .element
+{
+    width:30%;
+
+}
+.Portfolio .portElements .element .ElementInner .FirstSide, .Portfolio .portElements .element .ElementInner .SecondSide
+
+{
+    position: absolute;
+    width:100%;
+    height:100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.Portfolio .portElements .element  .ElementInner .SecondSide
+{
+    transform: rotateY(180deg);
+}
+
+.Portfolio .portElements .element:hover .ElementInner{
+    transform: rotateY(180deg);
+}
+
+.Portfolio .portElements .element .ElementInner
+{
+    position: relative;
+    width:100%;
+    height:100%;
+    transition: transform 0.8s;
+transform-style: preserve-3d;
+
+
+}
+.Portfolio .portElements .element
+{
+    
+    
+    display: flex;
+    background-color: #aef63f;
+    border-radius: 10px;
+    padding-left:0px;
+    width:30%;
+    height:500px;
+    
+    perspective:1000px;
+}
+
+.Portfolio .portElements .element .ElementInner .FirstSide .right img, .Portfolio .portElements .element .ElementInner .SecondSide img
+{
+    width:100%;
+}
+
+@media (max-width:750px)
+{
+
+    .Portfolio .portElements
+{
+    flex-flow: column;
+}
+.Portfolio .portElements .element
+{
+    width:100%;
+}
+.Portfolio .portElements .element .ElementInner .SecondSide h4, .Portfolio .portElements .element .ElementInner .SecondSide a
+{
+    padding-left:40px;
+}
+}

@@ -1,0 +1,76 @@
+.aboutMe
+{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#232325 ;
+    border-radius: 30px;;
+    min-height:350px;
+    margin-bottom:100px;
+    margin-top:100px;
+    display: flex;
+}
+.aboutMe .aboutMeLeft
+{
+width:60%;
+padding:50px;
+color:#a1a1a1;
+text-align: justify;
+
+} 
+.aboutMe .aboutMeLeft h2
+{
+    font-size:30px;
+    text-align: center;
+}
+.aboutMe .aboutMeLeft p
+{
+    font-size:18px
+}
+
+.aboutMe .aboutMeRight .abmephoto
+{
+    background-image:url('../images/ja.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  height:70%;
+    width:70%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius:50%;
+    margin-top:20%;
+}
+.aboutMe .aboutMeRight
+{
+    width:40%;
+    min-height:100px;
+}
+
+@media(max-width:750px)
+{
+    .aboutMe
+{
+    flex-flow: column;
+}
+.aboutMe .aboutMeLeft
+{
+    width: 90%;
+    padding:5%;
+}
+.aboutMe .aboutMeRight
+{
+    width:90%;
+    padding:5%;
+}
+
+.aboutMe .aboutMeRight .abmephoto
+{
+    padding-top:0;
+    width:50%;
+    height:200px;
+    margin-top:0;
+}
+
+
+}

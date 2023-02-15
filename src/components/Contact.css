@@ -1,0 +1,186 @@
+.contact
+{
+display: flex;
+width:90%;
+margin-left: auto;
+margin-right: auto;
+color:#dddddd;
+
+}
+.contact .Contactleft
+{
+    width:40%;
+    min-height:400px;
+    
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: #232324;
+
+}
+
+.contact .ContactRight
+{
+width:60%;
+min-height:400px;
+background-color: #232324;
+border-bottom-right-radius: 10px;
+border-top-right-radius: 10px;
+
+}
+
+.contact .ContactRight h2, .contact .ContactRight h3
+{
+    text-align: center;
+    font-size:30px
+}
+
+.contact .ContactRight .conElements .conElement a 
+{
+font-size:18px;
+color:#dddddd;
+text-decoration: none;
+margin: 15px;
+
+}
+
+.contact .ContactRight p
+{
+    text-align: justify;
+    padding:20px;
+}
+
+.contact .ContactRight .conElements
+{
+    display: flex;
+    justify-content: space-around;
+    padding:50px;
+}
+
+.contact .ContactRight .formCon
+{
+    width:70%;
+    margin-bottom: 100px;;
+}
+.contact .ContactRight .formCon input[type=email], .contact .ContactRight .formCon textarea
+{
+    display: block;
+    width:100%;
+    padding:15px;
+    border:#aef63f 1px solid !important;
+    border-radius: 10px;;
+    background-color: #606060;
+    color:#fff;
+    font-size:18px;
+    font-weight: 600;
+    margin-top:5px;
+    margin-bottom: 22px;
+    
+}
+.focusText:focus
+{
+    border:#aef63f 1px solid !important;
+    
+
+}
+.contact .ContactRight .formCon button
+{
+    border:#aef63f 2px solid !important;
+display: block;
+margin-left: auto;
+margin-right:auto;
+padding:10px;
+margin-top:20px;
+width:90%;
+border-radius: 10px;
+background-color: #606060;
+color:#fff;
+font-weight: 400;
+font-size:18px;
+transition:0.3s;
+
+
+}
+.contact .ContactRight .formCon button:hover
+{
+transform: scale(120%);
+background-color: #aef63f;
+border:#ffffff 2px solid !important;
+color:#232324
+}
+.contact .ContactRight .formCon textarea
+{
+    height:200px
+}
+.contact .ContactRight .formCon input[type=email]::placeholder, .contact .ContactRight .formCon textarea::placeholder
+{
+color:#aaa9a9
+}
+
+.error
+{
+    font-weight: bold;
+    font-size:18px;
+    color:red;
+    margin-top:10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.message
+{
+    font-weight: bold;
+    font-size:18px;
+    color:green;
+    margin-top:10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.disabled
+{
+    pointer-events:none;
+}
+.loading
+{
+    font-weight: bold;
+    font-size:18px;
+    color:white;
+    margin-top:10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+@media(max-width:750px)
+{
+    .contact .Contactleft
+{
+    visibility: hidden;
+    display: none;
+}
+
+.contact .ContactRight
+{
+    width:90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.contact
+{
+    flex-flow:column;
+    border-radius: 10px;
+}
+.contact .ContactRight .conElements
+{
+    flex-flow: column;
+    padding:10px;
+    gap:20px;
+}
+.contact .ContactRight .formCon
+{
+    width:100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contact .ContactRight .formCon input[type=email], .contact .ContactRight .formCon textarea
+{
+    width:90%;
+}
+}

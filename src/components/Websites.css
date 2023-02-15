@@ -1,0 +1,109 @@
+.part2Websites .advWebsite
+{
+width:80%;
+min-height:300px;
+background-color: #232325;
+border-radius: 20px;
+color:#dddddd;
+}
+.part2Websites h2
+{
+    text-align: center;
+    color:#dddddd;
+    font-size:30px;
+    margin-bottom:50px;
+}
+.part2Websites
+{
+    margin-top:80px;
+    margin-bottom: 80px;
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+}
+
+.part2Websites .advWebsite .image
+{
+    width:100%;
+}
+.part2Websites .advWebsite .image img
+{
+    display: block;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+.part2Websites .advWebsite .title h4
+{
+    font-size:18px;
+}
+.part2Websites .advWebsite .content p
+{
+    font-size:14px;
+}
+.part2Websites .advWebsite .title, .part2Websites .advWebsite .content
+{
+    padding-right:13px;
+    padding-left:13px;
+    padding-bottom: 20px;
+}
+.part2Websites .advWebsite 
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.part1Websites
+{
+    color:#dddddd;
+    display: flex;
+    
+
+}
+.part1Websites h3
+{
+    text-align: center;
+    font-size:30px;
+}
+
+
+.part1Websites .leftpart1
+{
+    width:40%;
+    padding:100px;
+}
+.part1Websites .leftpart1 p
+{
+    font-size:15px;
+}
+
+.part1Websites .rightpart1
+{
+width:60%;
+}
+.Websites{
+    background-image:url('../images/lines.jpg');
+    background-repeat: no-repeat;
+}
+
+@media(max-width:750px)
+{
+    .part1Websites
+{
+    flex-flow: column;
+    width:100%;
+}
+    .part1Websites .leftpart1
+{
+    width:90%;
+
+    padding:5%;
+}
+
+.part1Websites .rightpart1
+{
+    visibility: hidden;
+}
+}
